@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Zero</title>
+    <title>Adolf SkyNet</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="toast.css">
 
@@ -36,18 +36,19 @@
             <div class="left-panel-top">
                 <!--Sidebar upper elements-->
                 <div class="config-section" id="status-section" x-data="{ connected: true }">
-                    <h3>Status</h3>
-                    <h4 class="connected" x-show="connected">&#10004; Connected</h4>
-                    <h4 class="disconnected" x-show="!connected">&#10008; Disconnected</h4>
+                    <h3>Estado</h3>
+                    <h4 class="connected" x-show="connected">&#10004; Conectado</h4>
+                    <h4 class="disconnected" x-show="!connected">&#10008; Desconectado</h4>
                 </div>
 
                 <div class="config-section" x-data="{ showQuickActions: true }">
-                    <h3>Quick Actions</h3>
-                    <button class="config-button" id="resetChat" @click="resetChat()">Reset chat</button>
-                    <button class="config-button" id="newChat" @click="newChat()">New Chat</button>
-                    <button class="config-button" id="loadChats" @click="loadChats()">Load Chat</button>
-<button class="config-button" id="loadChat" @click="saveChat()">Save Chat</button>
-<button class="config-button" id="boltNewFeature" @click="handleBoltNewFeature()">Bolt.new Feature</button>
+<h3>Acciones Rápidas</h3>
+<button class="config-button" id="resetChat" @click="resetChat()">Reiniciar chat</button>
+<button class="config-button" id="newChat" @click="newChat()">Nuevo Chat</button>
+<button class="config-button" id="loadChats" @click="loadChats()">Cargar Chat</button>
+<button class="config-button" id="loadChat" @click="saveChat()">Guardar Chat</button>
+<button class="config-button" id="customization-button" @click="handleCustomizationPanel()">Panel de Personalización</button>
+<button class="config-button" id="boltNewFeature" @click="handleBoltNewFeature()">Función Aryan_Developer</button>
 </div>
                 </div>
 
@@ -69,10 +70,10 @@
             </div>
             <!--Preferences-->
             <div class="pref-section">
-                <h3>Preferences</h3>
+                <h3>Preferencias</h3>
                 <ul class="config-list">
                     <li x-data="{ autoScroll: true }">
-                        <span>Autoscroll</span>
+                        <span>Desplazamiento Automático</span>
                         <label class="switch">
                             <input id="auto-scroll-switch" type="checkbox" x-model="autoScroll"
                                 x-effect="window.safeCall('toggleAutoScroll',autoScroll)">
@@ -81,14 +82,14 @@
                     </li>
                     <li x-data="{ darkMode: localStorage.getItem('darkMode') != 'false' }"
                         x-init="$watch('darkMode', val => toggleDarkMode(val))">
-                        <div class="switch-label">Dark mode</div>
+                        <div class="switch-label">Modo Oscuro</div>
                         <label class="switch">
                             <input type="checkbox" x-model="darkMode">
                             <span class="slider"></span>
                         </label>
                     </li>
                     <li x-data="{ showThoughts: true }">
-                        <span>Show thoughts</span>
+                        <span>Mostrar pensamientos</span>
                         <label class="switch">
                             <input type="checkbox" x-model="showThoughts"
                                 x-effect="window.safeCall('toggleThoughts',showThoughts)">
@@ -96,14 +97,14 @@
                         </label>
                     </li>
                     <li x-data="{ showJson: false }">
-                        <span>Show JSON</span>
+                        <span>Mostrar JSON</span>
                         <label class="switch">
                             <input type="checkbox" x-model="showJson" x-effect="window.safeCall('toggleJson',showJson)">
                             <span class="slider"></span>
                         </label>
                     </li>
                     <li x-data="{ showUtils: false }">
-                        <span>Show utility messages</span>
+                        <span>Mostrar mensajes de utilidad</span>
                         <label class="switch">
                             <input type="checkbox" x-model="showUtils"
                                 x-effect="window.safeCall('toggleUtils',showUtils)">
@@ -112,7 +113,7 @@
                     </li>
 
                 </ul>
-                <span id="a0version">Agent Zero 0.7<br>built on 2024-10-6</span>
+                <span id="a0version">Adolf SkyNet 0.7<br>construido el 2024-10-6</span>
             </div>
         </div>
         <div id="right-panel" class="panel">
@@ -127,14 +128,14 @@
             </div>
             <div id="toast" class="toast">
                 <div class="toast__message"></div>
-                <button class="toast__copy">Copy</button>
-                <button class="toast__close">Close</button>
+                <button class="toast__copy">Copiar</button>
+                <button class="toast__close">Cerrar</button>
             </div>
             <div id="progress-bar-box">
                 <h4 id="progress-bar-h"><span id="progress-bar-i">|></span><span id="progress-bar"></span></h4>
             </div>
             <div id="input-section" x-data="{ paused: false }">
-                <textarea id="chat-input" placeholder="Type your message here..." rows="1"></textarea>
+                <textarea id="chat-input" placeholder="Escribe tu mensaje aquí..." rows="1"></textarea>
                 <button class="chat-button" id="send-button" aria-label="Send message">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                         <path d="M25 20 L75 50 L25 80" fill="none" stroke="currentColor" stroke-width="15" />

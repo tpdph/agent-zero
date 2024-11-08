@@ -56,6 +56,74 @@
   --transition-speed: 0.3s;
 }
 
+.customization-panel {
+  background-color: var(--color-panel);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-md);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  z-index: 2000;
+  display: none;
+}
+
+.customization-panel.active {
+  display: block;
+}
+
+.customization-panel h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.customization-panel label {
+  color: var(--color-text);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.customization-panel input[type="color"],
+.customization-panel input[type="file"] {
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+}
+
+.customization-panel .semi-transparent-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius);
+  height: 100px;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+}
+
+.customization-panel .semi-transparent-bg img {
+  border-radius: var(--border-radius);
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.customization-panel .close-button {
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--spacing-xs);
+  color: var(--color-text);
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-md);
+  position: absolute;
+  right: var(--spacing-md);
+  top: var(--spacing-md);
+  transition: background-color var(--transition-speed) ease-in-out;
+}
+
+.customization-panel .close-button:hover {
+  background-color: #b00020;
+}
+
 /* Reset and Base Styles */
 body,
 html {
