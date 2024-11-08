@@ -24,3 +24,4 @@ sentence-transformers==3.0.1
 unstructured==0.15.13
 unstructured-client==0.25.9
 webcolors==24.6.0
+langchain-community>=0.3.0
