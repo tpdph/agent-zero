@@ -518,6 +518,24 @@ h4 {
   background-color: #111;
 }
 
+#boltNewFeature {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: none;
+  border-radius: var(--spacing-xs);
+  cursor: pointer;
+  padding: var(--spacing-sm) 0.75rem;
+  transition: background-color var(--transition-speed) ease-in-out;
+}
+
+#boltNewFeature:hover {
+  background-color: #2d2f31;
+}
+
+#boltNewFeature:active {
+  background-color: #111;
+}
+
 .edit-button {
   background-color: transparent;
   border: 1px solid var(--color-primary);
@@ -859,3 +877,4 @@ input:checked + .slider:before {
     text-wrap: nowrap;
   }
 }
+

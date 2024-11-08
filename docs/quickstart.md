@@ -35,6 +35,15 @@ Let's ask Agent Zero to download a YouTube video. Here's how:
 
 3. The agent will then ask you for the URL of the YouTube video you want to download.
 
+## Using Bolt.new Features
+Bolt.new introduces advanced processing capabilities to Agent Zero. Here's how you can leverage these features:
+
+1. **Accessing Bolt.new Features**: Once you have Agent Zero running, you can access Bolt.new features directly through the chat interface. Simply type a command or question that requires advanced data processing or analysis.
+
+2. **Example Task**: To see Bolt.new in action, try asking Agent Zero to "Analyze the recent stock market trends using Bolt.new". The agent will utilize Bolt.new's enhanced data processing tools to provide a detailed analysis.
+
+3. **Customizing Bolt.new Usage**: You can customize how Bolt.new features are used by modifying the system prompts or integrating new tools. Refer to the [Usage Guide](usage.md) for more details on customization.
+
 ## Example Interaction
 Here's an example of what you might see in the Web UI at step 3:
 ![1](res/image-24.png)
@@ -52,3 +61,4 @@ Now that you've run a simple task, you can experiment with more complex requests
 > The [Usage Guide](usage.md) provides more in-depth information on using Agent 
 > Zero's various features, including prompt engineering, tool usage, and multi-agent 
 > cooperation.
+

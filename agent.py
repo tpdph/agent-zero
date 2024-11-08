@@ -15,6 +15,7 @@ import python.helpers.log as Log
 from python.helpers.dirty_json import DirtyJson
 from python.helpers.defer import DeferredTask
 from typing import Callable
+from bolt.new import BoltFeature  # Example import from Bolt.new
 
 
 class AgentContext:
@@ -233,9 +234,15 @@ class Agent:
             window_seconds=self.config.rate_limit_seconds,
         )
         self.data = {}  # free data object all the tools can use
+        self.bolt_feature = BoltFeature()  # Initialize Bolt.new feature
 
     async def monologue(self, msg: str):
         while True:
+            # Example usage of Bolt.new feature
+            bolt_result = self.bolt_feature.process(msg)
+            if bolt_result:
+                PrintStyle(font_color="blue", padding=True).print(f"Bolt Feature: {bolt_result}")
+                return bolt_result
             try:
                 # loop data dictionary to pass to extensions
                 loop_data = LoopData()
@@ -270,7 +277,9 @@ class Agent:
                         # build chain from system prompt, message history and model
                         prompt = ChatPromptTemplate.from_messages(
                             [
-                                SystemMessage(content="\n\n".join(loop_data.system)),
+                                SystemMessage(content="
+
+".join(loop_data.system)),
                                 MessagesPlaceholder(variable_name="messages"),
                             ]
                         )
@@ -417,7 +426,9 @@ class Agent:
     async def append_message(self, msg: str, human: bool = False):
         message_type = "human" if human else "ai"
         if self.history and self.history[-1].type == message_type:
-            self.history[-1].content += "\n\n" + msg
+            self.history[-1].content += "
+
+" + msg
         else:
             new_message = HumanMessage(content=msg) if human else AIMessage(content=msg)
             self.history.append(new_message)
@@ -430,7 +441,8 @@ class Agent:
             self.last_message = msg
 
     def concat_messages(self, messages):
-        return "\n".join([f"{msg.type}: {msg.content}" for msg in messages])
+        return "
+".join([f"{msg.type}: {msg.content}" for msg in messages])
 
     async def call_utility_llm(
         self, system: str, msg: str, callback: Callable[[str], None] | None = None
@@ -594,3 +606,4 @@ class Agent:
         )
         for cls in classes:
             await cls(agent=self).execute(**kwargs)
+

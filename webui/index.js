@@ -2,6 +2,7 @@ import * as msgs from "./messages.js"
 
 const leftPanel = document.getElementById('left-panel');
 const rightPanel = document.getElementById('right-panel');
+const boltNewButton = document.getElementById('bolt-new-button'); // New button for Bolt.new feature
 const container = document.querySelector('.container');
 const chatInput = document.getElementById('chat-input');
 const chatHistory = document.getElementById('chat-history');
@@ -58,6 +59,20 @@ function setupSidebarToggle() {
 // Make sure to call this function
 document.addEventListener('DOMContentLoaded', setupSidebarToggle);
 
+async function handleBoltNewFeature() {
+    // Logic to handle Bolt.new feature interaction
+    try {
+        const response = await sendJsonData("/boltNewFeature", { context });
+        if (!response.ok) {
+            toast(response.message || "Error with Bolt.new feature.", "error");
+        } else {
+            toast("Bolt.new feature executed successfully.", "success");
+        }
+    } catch (e) {
+        toast(e.message, "error");
+    }
+}
+
 async function sendMessage() {
     try {
         const message = chatInput.value.trim();
@@ -94,6 +109,7 @@ chatInput.addEventListener('keydown', (e) => {
 });
 
 sendButton.addEventListener('click', sendMessage);
+boltNewButton.addEventListener('click', handleBoltNewFeature); // Event listener for Bolt.new button
 
 function updateUserTime() {
     const now = new Date();
@@ -564,3 +580,4 @@ async function startPolling() {
 }
 
 document.addEventListener("DOMContentLoaded", startPolling);
+

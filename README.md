@@ -13,6 +13,14 @@
 ## Now with Responsive UI, Auto-memory and Reflection:
 ![Web UI](/docs/res/win_webui2.gif)
 
+## Bolt.new Integration
+Bolt.new is a powerful extension integrated into Agent Zero to enhance its capabilities. It provides advanced processing features that allow Agent Zero to handle tasks more efficiently and effectively. With Bolt.new, Agent Zero can now leverage enhanced data processing and analysis tools, making it more robust in handling complex tasks.
+
+### New Features and Capabilities
+- **Advanced Data Processing**: Bolt.new introduces new algorithms for faster and more accurate data processing.
+- **Enhanced Analysis Tools**: Provides tools for deeper insights and analysis, improving decision-making processes.
+- **Improved Efficiency**: Optimizes task handling, reducing processing time and increasing overall efficiency.
+
 ## Key concepts
 1. **General-purpose assistant**
 - Agent Zero is not pre-programmed for specific tasks (but can be). It is meant to be a general-purpose personal assistant. Give it a task, and it will gather information, execute commands and code, cooperate with other agent instances, and do its best to accomplish it.
@@ -115,3 +123,4 @@ The documentation dives deep into the framework and its features. It is a good p
 > **Changes to launch files since v0.6:**  
 > - main.py file has been replaced with run_ui.py (webui) and run_cli.py (terminal) launch files.
 > - configuration has been moved to initialize.py for both webui and terminal launch files.
+

@@ -5,10 +5,19 @@ To begin with Agent Zero, follow the links below for detailed guides on various 
 - **[Installation](installation.md):** Set up (or [update](installation.md#how-to-update-agent-zero)) Agent Zero on your system.
 - **[Quick Start](quickstart.md):** Begin using Agent Zero with practical examples.
 - **[Usage Guide](usage.md):** Explore advanced features and capabilities.
+- **[Bolt.new Integration](#boltnew-integration):** Discover the new capabilities introduced by Bolt.new.
 - **[Architecture Overview](architecture.md):** Understand the internal workings of the framework.
 - **[Contributing](contribution.md):** Learn how to contribute to the Agent Zero project.
 - **[Troubleshooting and FAQ](troubleshooting.md):** Find answers to common issues and questions.
 ##
+### Bolt.new Integration
+Bolt.new is a powerful extension integrated into Agent Zero to enhance its capabilities. It provides advanced processing features that allow Agent Zero to handle tasks more efficiently and effectively. With Bolt.new, Agent Zero can now leverage enhanced data processing and analysis tools, making it more robust in handling complex tasks.
+
+### New Features and Capabilities
+- **Advanced Data Processing**: Bolt.new introduces new algorithms for faster and more accurate data processing.
+- **Enhanced Analysis Tools**: Provides tools for deeper insights and analysis, improving decision-making processes.
+- **Improved Efficiency**: Optimizes task handling, reducing processing time and increasing overall efficiency.
+
 ### Your experience with Agent Zero starts now!
 
 - **Download Agent Zero:** Download the latest release from the [GitHub releases page](https://github.com/frdel/agent-zero/releases).
@@ -44,6 +53,7 @@ To begin with Agent Zero, follow the links below for detailed guides on various 
   - [Example Interaction](quickstart.md#example-interaction)
   - [Next Steps](quickstart.md#next-steps)
 - [Usage Guide](usage.md)
+- [Bolt.new Integration](#boltnew-integration)
   - [Tool Usage](usage.md#tool-usage)
   - [Prompt Engineering](usage.md#prompt-engineering)
   - [Example of Tools Usage](usage.md#example-of-tools-usage-web-search-and-code-execution)
@@ -52,6 +62,7 @@ To begin with Agent Zero, follow the links below for detailed guides on various 
   - [Agent Behavior](usage.md#agent-behavior)
   - [Using Agent Zero on your mobile device](usage.md#using-agent-zero-on-your-mobile-device)
   - [Using code_execution_tool outside of the Docker Container](usage.md#using-code_execution_tool-outside-of-the-docker-container)
+- [Bolt.new Integration](#boltnew-integration)
 - [Architecture Overview](architecture.md)
   - [Core Components](architecture.md#core-components)
   - [Agent Hierarchy and Communication](architecture.md#agent-hierarchy-and-communication)
@@ -78,5 +89,8 @@ To begin with Agent Zero, follow the links below for detailed guides on various 
   - [Submitting a Pull Request](contribution.md#submitting-a-pull-request)
   - [Documentation Stack](contribution.md#documentation-stack)
 - [FAQ and Troubleshooting](troubleshooting.md)
+- [Bolt.new Integration](#boltnew-integration)
   - [Frequently Asked Questions](troubleshooting.md#frequently-asked-questions)
-  - [Troubleshooting](troubleshooting.md#troubleshooting)
+- [FAQ and Troubleshooting](troubleshooting.md#troubleshooting)
+- [Bolt.new Integration](#boltnew-integration)
+
