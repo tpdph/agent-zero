@@ -1,46 +1,55 @@
-# Quick Start
-This guide provides a quick introduction to using Agent Zero. We'll cover launching the web UI, starting a new chat, and running a simple task.
+# Inicio Rápido
+Esta guía proporciona una introducción rápida al uso de Adolf SkyNet. Cubriremos cómo lanzar la interfaz web, iniciar un nuevo chat y ejecutar una tarea simple.
 
-## Launching the Web UI
-1. Make sure you have Agent Zero installed and your environment set up correctly (refer to the [Installation guide](installation.md) if needed).
-2. Open a terminal in the Agent Zero directory and activate your conda environment (if you're using one).
-3. Run the following command:
+## Lanzamiento de la Interfaz Web
+1. Asegúrate de tener Adolf SkyNet instalado y tu entorno configurado correctamente (consulta la [Guía de Instalación](installation.md) si es necesario).
+2. Abre una terminal en el directorio de Adolf SkyNet y activa tu entorno conda (si estás usando uno).
+3. Ejecuta el siguiente comando:
 
 ```bash
 python run_ui.py
 ```
 
-4.  A message similar to this will appear in your terminal, indicating the Web UI is running:
+4. Aparecerá un mensaje similar a este en tu terminal, indicando que la interfaz web está en funcionamiento:
 
 ![](res/flask_link.png)
 
-5. Open your web browser and navigate to the URL shown in the terminal (usually `http://127.0.0.1:50001`). You should see the Agent Zero Web UI.
+5. Abre tu navegador web y navega a la URL mostrada en la terminal (usualmente `http://127.0.0.1:50001`). Deberías ver la interfaz web de Adolf SkyNet.
 
 ![New Chat](res/ui_newchat1.png)
 
 > [!TIP]
-> As you can see, the Web UI has four distinct buttons for easy chat management: 
-> `New Chat`, `Reset Chat`, `Save Chat`, and `Load Chat`.
-> Chats can be saved and loaded individually in `json` format and are stored in the
-> `/tmp/chats` directory.
+> Como puedes ver, la interfaz web tiene cuatro botones distintos para una fácil gestión de chats: 
+> `Nuevo Chat`, `Reiniciar Chat`, `Guardar Chat` y `Cargar Chat`.
+> Los chats pueden guardarse y cargarse individualmente en formato `json` y se almacenan en el
+> directorio `/tmp/chats`.
 
     ![Chat Management](res/ui_chat_management.png)
 
-## Running a Simple Task
-Let's ask Agent Zero to download a YouTube video. Here's how:
+## Ejecutando una Tarea Simple
+Pidamos a Adolf SkyNet que descargue un video de YouTube. Así es como se hace:
 
-1.  Type "Download a YouTube video for me" in the chat input field and press Enter or click the send button.
+1. Escribe "Descarga un video de YouTube para mí" en el campo de entrada del chat y presiona Enter o haz clic en el botón de enviar.
 
-2. Agent Zero will process your request.  You'll see its "thoughts" and the actions it takes displayed in the UI. It will find a default already existing solution, that implies using the `code_execution_tool` to run a simple Python script to perform the task.
+2. Adolf SkyNet procesará tu solicitud. Verás sus "pensamientos" y las acciones que toma mostradas en la interfaz. Encontrará una solución predeterminada ya existente, que implica usar la `code_execution_tool` para ejecutar un script de Python simple para realizar la tarea.
 
-3. The agent will then ask you for the URL of the YouTube video you want to download.
+3. Luego, el agente te pedirá la URL del video de YouTube que deseas descargar.
 
-## Example Interaction
-Here's an example of what you might see in the Web UI at step 3:
+## Usando las Funciones de Aryan_Developer
+Aryan_Developer introduce capacidades avanzadas de procesamiento a Adolf SkyNet. Así es como puedes aprovechar estas funciones:
+
+1. **Accediendo a las Funciones de Aryan_Developer**: Una vez que tengas Adolf SkyNet en funcionamiento, puedes acceder a las funciones de Aryan_Developer directamente a través de la interfaz de chat. Simplemente escribe un comando o pregunta que requiera procesamiento o análisis de datos avanzados.
+
+2. **Tarea de Ejemplo**: Para ver Aryan_Developer en acción, intenta pedir a Adolf SkyNet que "Analice las tendencias recientes del mercado de valores usando Aryan_Developer". El agente utilizará las herramientas de procesamiento de datos mejoradas de Aryan_Developer para proporcionar un análisis detallado.
+
+3. **Personalizando el Uso de Aryan_Developer**: Puedes personalizar cómo se utilizan las funciones de Aryan_Developer modificando los mensajes del sistema o integrando nuevas herramientas. Consulta la [Guía de Uso](usage.md) para más detalles sobre la personalización.
+
+## Ejemplo de Interacción
+Aquí tienes un ejemplo de lo que podrías ver en la interfaz web en el paso 3:
 ![1](res/image-24.png)
 
-## Next Steps
-Now that you've run a simple task, you can experiment with more complex requests. Try asking Agent Zero to:
+## Próximos Pasos
+Ahora que has ejecutado una tarea simple, puedes experimentar con solicitudes más complejas. Intenta pedir a Adolf SkyNet que:
 
 * Perform calculations
 * Search the web for information
@@ -49,6 +58,6 @@ Now that you've run a simple task, you can experiment with more complex requests
 * Create or modify files
 
 > [!TIP]
-> The [Usage Guide](usage.md) provides more in-depth information on using Agent 
-> Zero's various features, including prompt engineering, tool usage, and multi-agent 
-> cooperation.
+> La [Guía de Uso](usage.md) proporciona información más detallada sobre el uso de las 
+> diversas características de Adolf SkyNet, incluyendo la ingeniería de mensajes, el uso de herramientas y la cooperación multi-agente.
+

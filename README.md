@@ -1,117 +1,126 @@
-# Agent Zero
+# Adolf SkyNet
 
-[![Join our Skool Community](https://img.shields.io/badge/Skool-Join%20our%20Community-4A90E2?style=for-the-badge&logo=skool&logoColor=white)](https://www.skool.com/agent-zero) [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B8KZKNsPpj) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AgentZeroFW) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jan-tomasek/) [![Follow on X.com](https://img.shields.io/badge/X.com-Follow-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/JanTomasekDev)
+[![Únete a nuestra Comunidad de Skool](https://img.shields.io/badge/Skool-Únete%20a%20nuestra%20Comunidad-4A90E2?style=for-the-badge&logo=skool&logoColor=white)](https://www.skool.com/adolf-skynet) [![Únete a nuestro Discord](https://img.shields.io/badge/Discord-Únete%20a%20nuestro%20servidor-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B8KZKNsPpj) [![Suscríbete en YouTube](https://img.shields.io/badge/YouTube-Suscríbete-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AdolfSkyNetFW) [![Conéctate en LinkedIn](https://img.shields.io/badge/LinkedIn-Conéctate-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jan-tomasek/) [![Síguenos en X.com](https://img.shields.io/badge/X.com-Síguenos-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/JanTomasekDev)
 
 
 [![Intro Video](/docs/res/new_vid.jpg)](https://www.youtube.com/watch?v=U_Gl0NPalKA)
 
-**Personal and organic AI framework**
-- Agent Zero is not a predefined agentic framework. It is designed to be dynamic, organically growing, and learning as you use it.
-- Agent Zero is fully transparent, readable, comprehensible, customizable and interactive.
-- Agent Zero uses the computer as a tool to accomplish its (your) tasks.
+**Marco de IA personal y orgánico**
+- Adolf SkyNet no es un marco agentico predefinido. Está diseñado para ser dinámico, crecer orgánicamente y aprender a medida que lo usas.
+- Adolf SkyNet es completamente transparente, legible, comprensible, personalizable e interactivo.
+- Adolf SkyNet utiliza la computadora como una herramienta para realizar sus (tus) tareas.
 
-## Now with Responsive UI, Auto-memory and Reflection:
-![Web UI](/docs/res/win_webui2.gif)
+## Ahora con UI Responsiva, Memoria Automática y Reflexión:
+![Interfaz Web](/docs/res/win_webui2.gif)
 
-## Key concepts
-1. **General-purpose assistant**
-- Agent Zero is not pre-programmed for specific tasks (but can be). It is meant to be a general-purpose personal assistant. Give it a task, and it will gather information, execute commands and code, cooperate with other agent instances, and do its best to accomplish it.
-- It has a persistent memory, allowing it to memorize previous solutions, code, facts, instructions, etc., to solve tasks faster and more reliably in the future.
+## Integración de Aryan_Developer
+Aryan_Developer es una poderosa extensión integrada en Adolf SkyNet para mejorar sus capacidades. Proporciona características avanzadas de procesamiento que permiten a Adolf SkyNet manejar tareas de manera más eficiente y efectiva. Con Aryan_Developer, Adolf SkyNet ahora puede aprovechar herramientas mejoradas de procesamiento y análisis de datos, haciéndolo más robusto en el manejo de tareas complejas.
 
-2. **Computer as a tool**
-- Agent Zero uses the operating system as a tool to accomplish its tasks. It has no single-purpose tools pre-programmed. Instead, it can write its own code and use the terminal to create and use its own tools as needed.
-- The only default tools in its arsenal are online search, memory features, communication (with the user and other agents), and code/terminal execution. Everything else is created by the agent itself or can be extended by the user.
-- Tool usage functionality has been developed from scratch to be the most compatible and reliable, even with very small models.
+### Nuevas Características y Capacidades
+- **Procesamiento de Datos Avanzado**: Aryan_Developer introduce nuevos algoritmos para un procesamiento de datos más rápido y preciso.
+- **Herramientas de Análisis Mejoradas**: Proporciona herramientas para obtener conocimientos más profundos y análisis, mejorando los procesos de toma de decisiones.
+- **Eficiencia Mejorada**: Optimiza el manejo de tareas, reduciendo el tiempo de procesamiento y aumentando la eficiencia general.
 
-* **Default Tools:** Agent Zero includes tools like knowledge, webpage content, code execution, and communication. 
-* **Creating Custom Tools:**  Extend Agent Zero's functionality by creating your own custom tools.
-* **Instruments:**  Instruments are a new type of tool that allow you to create custom functions and procedures that can be called by Agent Zero.
+## Conceptos Clave
+1. **Asistente de propósito general**
+- Adolf SkyNet no está preprogramado para tareas específicas (pero puede estarlo). Está destinado a ser un asistente personal de propósito general. Dale una tarea, y recopilará información, ejecutará comandos y código, cooperará con otras instancias de agentes, y hará su mejor esfuerzo para lograrlo.
+- Tiene una memoria persistente, lo que le permite memorizar soluciones anteriores, código, hechos, instrucciones, etc., para resolver tareas más rápido y de manera más confiable en el futuro.
 
-3. **Multi-agent cooperation**
-- Every agent has a superior agent giving it tasks and instructions. Every agent then reports back to its superior.
-- In the case of the first agent in the chain (Agent 0), the superior is the human user; the agent sees no difference.
-- Every agent can create its subordinate agent to help break down and solve subtasks. This helps all agents keep their context clean and focused.
+2. **La computadora como herramienta**
+- Adolf SkyNet utiliza el sistema operativo como una herramienta para realizar sus tareas. No tiene herramientas preprogramadas de un solo propósito. En cambio, puede escribir su propio código y usar el terminal para crear y usar sus propias herramientas según sea necesario.
+- Las únicas herramientas predeterminadas en su arsenal son la búsqueda en línea, las funciones de memoria, la comunicación (con el usuario y otros agentes) y la ejecución de código/terminal. Todo lo demás es creado por el propio agente o puede ser ampliado por el usuario.
+- La funcionalidad de uso de herramientas se ha desarrollado desde cero para ser la más compatible y confiable, incluso con modelos muy pequeños.
 
-4. **Completely customizable and extensible**
-- Almost nothing in this framework is hard-coded. Nothing is hidden. Everything can be extended or changed by the user.
-- The whole behavior is defined by a system prompt in the **prompts/default/agent.system.md** file. Change this prompt and change the framework dramatically.
-- The framework does not guide or limit the agent in any way. There are no hard-coded rails that agents have to follow.
-- Every prompt, every small message template sent to the agent in its communication loop, can be found in the **prompts/** folder and changed.
-- Every default tool can be found in the **python/tools/** folder and changed or copied to create new predefined tools.
-- Of course, it is open-source (except for some tools like Perplexity, but that will be replaced with an open-source alternative as well in the future).
+* **Herramientas Predeterminadas:** Adolf SkyNet incluye herramientas como conocimiento, contenido de páginas web, ejecución de código y comunicación.
+* **Creación de Herramientas Personalizadas:** Extiende la funcionalidad de Adolf SkyNet creando tus propias herramientas personalizadas.
+* **Instrumentos:** Los instrumentos son un nuevo tipo de herramienta que te permiten crear funciones y procedimientos personalizados que pueden ser llamados por Adolf SkyNet.
 
-5. **Communication is key**
-- Give your agent a proper system prompt and instructions, and it can do miracles.
-- Agents can communicate with their superiors and subordinates, asking questions, giving instructions, and providing guidance. Instruct your agents in the system prompt on how to communicate effectively.
-- The terminal interface is real-time streamed and interactive. You can stop and intervene at any point. If you see your agent heading in the wrong direction, just stop and tell it right away.
-- There is a lot of freedom in this framework. You can instruct your agents to regularly report back to superiors asking for permission to continue. You can instruct them to use point-scoring systems when deciding when to delegate subtasks. Superiors can double-check subordinates' results and dispute. The possibilities are endless.
+3. **Cooperación Multi-agente**
+- Cada agente tiene un agente superior que le da tareas e instrucciones. Cada agente luego informa a su superior.
+- En el caso del primer agente en la cadena (Agente 0), el superior es el usuario humano; el agente no ve diferencia.
+- Cada agente puede crear su agente subordinado para ayudar a desglosar y resolver subtareas. Esto ayuda a todos los agentes a mantener su contexto limpio y enfocado.
 
-![Agent Zero](/docs/res/splash_wide.png)
+4. **Completamente personalizable y extensible**
+- Casi nada en este marco está codificado. Nada está oculto. Todo puede ser ampliado o cambiado por el usuario.
+- Todo el comportamiento está definido por un mensaje del sistema en el archivo **prompts/default/agent.system.md**. Cambia este mensaje y cambia el marco dramáticamente.
+- El marco no guía ni limita al agente de ninguna manera. No hay rieles codificados que los agentes deban seguir.
+- Cada mensaje, cada pequeña plantilla de mensaje enviada al agente en su bucle de comunicación, se puede encontrar en la carpeta **prompts/** y cambiar.
+- Cada herramienta predeterminada se puede encontrar en la carpeta **python/tools/** y cambiar o copiar para crear nuevas herramientas predefinidas.
+- Por supuesto, es de código abierto (excepto por algunas herramientas como Perplexity, pero eso será reemplazado con una alternativa de código abierto en el futuro).
 
-## Nice features to have
-- Output is very clean, colorful, readable and interactive; nothing is hidden.
-- The same colorful output you see in the terminal is automatically saved to HTML file in **logs/** folder for every session.
-- Agent output is streamed in real-time, allowing the user to read along and intervene at any time.
-- No coding is required, only prompting and communication skills.
-- With a solid system prompt, the framework is reliable even with small models, including precise tool usage.
+5. **La comunicación es clave**
+- Dale a tu agente un mensaje del sistema adecuado e instrucciones, y puede hacer milagros.
+- Los agentes pueden comunicarse con sus superiores y subordinados, haciendo preguntas, dando instrucciones y proporcionando orientación. Instruye a tus agentes en el mensaje del sistema sobre cómo comunicarse efectivamente.
+- La interfaz de terminal es transmitida en tiempo real e interactiva. Puedes detenerte e intervenir en cualquier momento. Si ves que tu agente se dirige en la dirección equivocada, simplemente detente y díselo de inmediato.
+- Hay mucha libertad en este marco. Puedes instruir a tus agentes para que informen regularmente a los superiores pidiendo permiso para continuar. Puedes instruirlos para que usen sistemas de puntuación al decidir cuándo delegar subtareas. Los superiores pueden verificar los resultados de los subordinados y disputar. Las posibilidades son infinitas.
 
-![Agent 1 System Load](/docs/res/ui_screen.png)
+![Adolf SkyNet](/docs/res/splash_wide.png)
 
-## Keep in mind
-1. **Agent Zero can be dangerous!**
-With proper instruction, Agent Zero is capable of many things, even potentially dangerous to your computer, data, or accounts. Always run Agent Zero in an isolated environment (like the built in docker container) and be careful what you wish for.
+## Características agradables de tener
+- La salida es muy limpia, colorida, legible e interactiva; nada está oculto.
+- La misma salida colorida que ves en el terminal se guarda automáticamente en un archivo HTML en la carpeta **logs/** para cada sesión.
+- La salida del agente se transmite en tiempo real, permitiendo al usuario leer e intervenir en cualquier momento.
+- No se requiere codificación, solo habilidades de comunicación y redacción de mensajes.
+- Con un mensaje del sistema sólido, el marco es confiable incluso con modelos pequeños, incluyendo el uso preciso de herramientas.
 
-2. **Agent Zero is not pre-programmed; it is prompt-based.**
-The whole framework contains only a minimal amount of code and does not guide the agent in any way.
-Everything lies in the system prompt in the **prompts/** folder. Here you can rewrite the whole framework behavior to your needs.
-If your agent fails to communicate properly, use tools, reason, use memory, find answers - just instruct it better.
+![Carga del Sistema del Agente 1](/docs/res/ui_screen.png)
 
-3. **If you cannot provide the ideal environment, let your agent know.**
-Agent Zero is made to be used in an isolated virtual environment (for safety) with some tools preinstalled and configured.
-If you cannot provide all the necessary conditions or API keys, just change the system prompt and tell your agent what operating system and tools are at its disposal. Nothing is hard-coded; if you do not tell your agent about a certain tool, it will not know about it and will not try to use it.
+## Ten en cuenta
+1. **¡Adolf SkyNet puede ser peligroso!**
+Con la instrucción adecuada, Adolf SkyNet es capaz de muchas cosas, incluso potencialmente peligrosas para tu computadora, datos o cuentas. Siempre ejecuta Adolf SkyNet en un entorno aislado (como el contenedor docker incorporado) y ten cuidado con lo que deseas.
 
-[![David Ondrej video](/docs/res/david_vid.jpg)](https://www.youtube.com/watch?v=_Pionjv4hGc)
+2. **Adolf SkyNet no está preprogramado; está basado en mensajes.**
+Todo el marco contiene solo una cantidad mínima de código y no guía al agente de ninguna manera.
+Todo está en el mensaje del sistema en la carpeta **prompts/**. Aquí puedes reescribir el comportamiento completo del marco a tus necesidades.
+Si tu agente no se comunica correctamente, usa herramientas, razona, usa la memoria, encuentra respuestas, simplemente instrúyelo mejor.
 
-## Known problems
-1. The system prompt sucks. You can do better. If you do, help me please :)
-2. The communication between agents and terminal in Docker Container via SSH can sometimes break and stop producing outputs. Sometimes it is because the agent runs something like "server.serve_forever()" which causes the terminal to hang, sometimes a random error can occur. Restarting the agent and/or the docker container helps.
-3. The agent can break his operating system. Sometimes the agent can deactivate virtual environment, uninstall packages, change config etc. Again, removing the docker container and cleaning up the **work_dir/** is enough to fix that.
+3. **Si no puedes proporcionar el entorno ideal, hazlo saber a tu agente.**
+Adolf SkyNet está hecho para ser usado en un entorno virtual aislado (por seguridad) con algunas herramientas preinstaladas y configuradas.
+Si no puedes proporcionar todas las condiciones necesarias o claves API, simplemente cambia el mensaje del sistema y dile a tu agente qué sistema operativo y herramientas tiene a su disposición. Nada está codificado; si no le dices a tu agente sobre una herramienta en particular, no lo sabrá y no intentará usarla.
 
-## Ideal environment
-- **Docker container**: The perfect environment to run Agent Zero is the built-in docker container. The agent can download the image **frdel/agent-zero-exe** on its own and start the container, you only need to have docker running (like the Docker Desktop application).
-- **Python**: Python has to be installed on the system to run the framework.
-- **Internet access**: The agent will need internet access to use its online knowledge tool and execute commands and scripts requiring a connection. If you do not need your agent to be online, you can alter its prompts in the **prompts/** folder and make it fully local.
+[![Video de David Ondrej](/docs/res/david_vid.jpg)](https://www.youtube.com/watch?v=_Pionjv4hGc)
 
-![Time example](/docs/res/time_example.jpg)
+## Problemas conocidos
+1. El mensaje del sistema apesta. Puedes hacerlo mejor. Si lo haces, ayúdame por favor :)
+2. La comunicación entre agentes y terminal en el Contenedor Docker a través de SSH a veces puede romperse y dejar de producir salidas. A veces es porque el agente ejecuta algo como "server.serve_forever()" que hace que el terminal se cuelgue, a veces puede ocurrir un error aleatorio. Reiniciar el agente y/o el contenedor docker ayuda.
+3. El agente puede romper su sistema operativo. A veces el agente puede desactivar el entorno virtual, desinstalar paquetes, cambiar la configuración, etc. Nuevamente, eliminar el contenedor docker y limpiar el **work_dir/** es suficiente para solucionar eso.
 
-## Setup
-A detailed setup guide for Windows, macOS and Linux with a video can be found in the new Agent Zero Documentation at [this page](docs/installation.md#in-depth-guide-for-windows-and-macos).
+## Entorno ideal
+- **Contenedor Docker**: El entorno perfecto para ejecutar Adolf SkyNet es el contenedor docker incorporado. El agente puede descargar la imagen **frdel/adolf-skynet-exe** por sí solo e iniciar el contenedor, solo necesitas tener docker en ejecución (como la aplicación Docker Desktop).
+- **Python**: Python debe estar instalado en el sistema para ejecutar el marco.
+- **Acceso a Internet**: El agente necesitará acceso a Internet para usar su herramienta de conocimiento en línea y ejecutar comandos y scripts que requieran una conexión. Si no necesitas que tu agente esté en línea, puedes modificar sus mensajes en la carpeta **prompts/** y hacerlo completamente local.
 
-## Consult the Documentation
-The documentation dives deep into the framework and its features. It is a good place to start if you are new to Agent Zero. Click [here](docs/README.md) to see the Documentation.
+![Ejemplo de Tiempo](/docs/res/time_example.jpg)
 
-## Coming up
-- **Preinstalled binaries and bundler scripts**
-- **Knowledge tool open-sourcing and web scraping tool**
-- **User interaction refinements**
-- **In-context switchable LLMs**
+## Configuración
+Una guía de configuración detallada para Windows, macOS y Linux con un video se puede encontrar en la nueva Documentación de Adolf SkyNet en [esta página](docs/installation.md#in-depth-guide-for-windows-and-macos).
 
-### Changelog [since version 0.7]
+## Consulta la Documentación
+La documentación profundiza en el marco y sus características. Es un buen lugar para comenzar si eres nuevo en Adolf SkyNet. Haz clic [aquí](docs/README.md) para ver la Documentación.
+
+## Próximamente
+- **Binarios preinstalados y scripts de empaquetado**
+- **Herramienta de conocimiento de código abierto y herramienta de raspado web**
+- **Mejoras en la interacción del usuario**
+- **LLMs conmutables en contexto**
+
+### Registro de cambios [desde la versión 0.7]
 
 #### v0.7.1
-- **Persistent Chats** - Serialized to /tmp/chats and automatically loaded in run_ui.py on startup
-- **Documentation stack merged into the repository**
-- **Bug Fixes**
+- **Chats Persistentes** - Serializados en /tmp/chats y cargados automáticamente en run_ui.py al inicio
+- **Pila de documentación fusionada en el repositorio**
+- **Corrección de errores**
 
 #### v0.7
-- **Automatic memory**
-- **UI improvements**
-- **Instruments**
-- **Extensions framework**
-- **Reflection prompts**
-- **Bugfixes**
+- **Memoria automática**
+- **Mejoras en la UI**
+- **Instrumentos**
+- **Marco de extensiones**
+- **Mensajes de reflexión**
+- **Corrección de errores**
 
-> [!NOTE]  
-> **Changes to launch files since v0.6:**  
-> - main.py file has been replaced with run_ui.py (webui) and run_cli.py (terminal) launch files.
-> - configuration has been moved to initialize.py for both webui and terminal launch files.
+> [!NOTA]  
+> **Cambios en los archivos de lanzamiento desde la v0.6:**  
+> - El archivo main.py ha sido reemplazado por los archivos de lanzamiento run_ui.py (webui) y run_cli.py (terminal).
+> - La configuración se ha movido a initialize.py para ambos archivos de lanzamiento webui y terminal.
+

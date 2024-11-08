@@ -2,6 +2,8 @@ import * as msgs from "./messages.js"
 
 const leftPanel = document.getElementById('left-panel');
 const rightPanel = document.getElementById('right-panel');
+const boltNewButton = document.getElementById('bolt-new-button'); // New button for Bolt.new feature
+const customizationButton = document.getElementById('customization-button'); // New button for customization panel
 const container = document.querySelector('.container');
 const chatInput = document.getElementById('chat-input');
 const chatHistory = document.getElementById('chat-history');
@@ -58,6 +60,25 @@ function setupSidebarToggle() {
 // Make sure to call this function
 document.addEventListener('DOMContentLoaded', setupSidebarToggle);
 
+async function handleBoltNewFeature() {
+    // Logic to handle Bolt.new feature interaction
+    try {
+        const response = await sendJsonData("/boltNewFeature", { context });
+        if (!response.ok) {
+            toast(response.message || "Error con la función de Aryan_Developer.", "error");
+        } else {
+            toast("Función de Aryan_Developer ejecutada con éxito.", "success");
+        }
+    } catch (e) {
+        toast(e.message, "error");
+    }
+}
+
+function handleCustomizationPanel() {
+    // Logic to open the customization panel
+    toast("Panel de personalización abierto.", "info");
+}
+
 async function sendMessage() {
     try {
         const message = chatInput.value.trim();
@@ -66,12 +87,12 @@ async function sendMessage() {
             const response = await sendJsonData("/msg", { text: message, context });
 
             if (!response) {
-                toast("No response returned.", "error")
+                toast("No se recibió respuesta.", "error")
             } else if (!response.ok) {
                 if (response.message) {
                     toast(response.message, "error")
                 } else {
-                    toast("Undefined error.", "error")
+                    toast("Error indefinido.", "error")
                 }
             } else {
                 setContext(response.context)
@@ -94,6 +115,8 @@ chatInput.addEventListener('keydown', (e) => {
 });
 
 sendButton.addEventListener('click', sendMessage);
+boltNewButton.addEventListener('click', handleBoltNewFeature); // Event listener for Bolt.new button
+customizationButton.addEventListener('click', handleCustomizationPanel); // Event listener for customization button
 
 function updateUserTime() {
     const now = new Date();
@@ -163,7 +186,7 @@ async function sendJsonData(url, data) {
     });
 
     if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('La respuesta de la red no fue satisfactoria');
     }
     const jsonResponse = await response.json();
     return jsonResponse;
@@ -329,7 +352,7 @@ window.toggleDarkMode = function (isDark) {
     } else {
         document.body.classList.add('light-mode');
     }
-    console.log("Dark mode:", isDark);
+    console.log("Modo oscuro:", isDark);
     localStorage.setItem('darkMode', isDark);
 };
 
@@ -345,7 +368,7 @@ window.toggleDarkMode = function (isDark) {
     } else {
         document.body.classList.add('light-mode');
     }
-    console.log("Dark mode:", isDark);
+    console.log("Modo oscuro:", isDark);
     localStorage.setItem('darkMode', isDark);
 };
 
@@ -379,7 +402,7 @@ window.loadChats = async function () {
         const response = await sendJsonData("/loadChats", { chats: fileContents });
 
         if (!response) {
-            toast("No response returned.", "error")
+            toast("No se recibió respuesta.", "error")
         } else if (!response.ok) {
             if (response.message) {
                 toast(response.message, "error")
@@ -388,7 +411,7 @@ window.loadChats = async function () {
             }
         } else {
             setContext(response.ctxids[0])
-            toast("Chats loaded.", "success")
+            toast("Chats cargados.", "success")
         }
 
     } catch (e) {
@@ -401,7 +424,7 @@ window.saveChat = async function () {
         const response = await sendJsonData("/exportChat", { ctxid: context });
 
         if (!response) {
-            toast("No response returned.", "error")
+            toast("No se recibió respuesta.", "error")
         } else if (!response.ok) {
             if (response.message) {
                 toast(response.message, "error")
@@ -410,7 +433,7 @@ window.saveChat = async function () {
             }
         } else {
             downloadFile(response.ctxid + ".json", response.content)
-            toast("Chat file downloaded.", "success")
+            toast("Archivo de chat descargado.", "success")
         }
 
     } catch (e) {
@@ -564,3 +587,4 @@ async function startPolling() {
 }
 
 document.addEventListener("DOMContentLoaded", startPolling);
+
